@@ -1,12 +1,13 @@
 [package]
 name = "php-std"
-description = "PHP engine semantics (value juggling, string, number, JSON, filter and URL functions) for crates that must behave exactly like PHP."
+description = "PHP engine semantics (the value model, juggling and comparison, string, number, JSON, serialize, igbinary, sorting, filter and URL functions) for crates that must behave exactly like PHP."
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.88"
 license = "BSD-3-Clause"
 
 [dependencies]
+bytes = "1"
 getrandom = "0.3"
 indexmap = "2"
 icu_normalizer = { version = "2.3", default-features = false, features = ["compiled_data"] }
