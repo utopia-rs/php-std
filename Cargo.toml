@@ -8,9 +8,21 @@ license = "BSD-3-Clause"
 
 [dependencies]
 bytes = "1"
+# crypt(), password_*() and hash(): Argon2, Blowfish (EksBlowfish), MD5, SHA-1, SHA-2 and SHA-3 (RustCrypto).
+argon2 = { version = "0.5", features = ["std"] }
+blowfish = { version = "0.9", features = ["bcrypt"] }
 getrandom = "0.3"
+gost94 = "0.10"
 indexmap = "2"
+md-5 = "0.10"
+md2 = "0.10"
 icu_normalizer = { version = "2.3", default-features = false, features = ["compiled_data"] }
 icu_properties = { version = "2.3", default-features = false, features = ["compiled_data"] }
+ripemd = "0.1"
 rustix = { version = "1", default-features = false, features = ["std", "fs", "system"] }
 serde_json = { version = "1", features = ["raw_value", "preserve_order", "float_roundtrip"] }
+sha1 = "0.10"
+sha2 = "0.10"
+sha3 = "0.10"
+whirlpool = "0.10"
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
