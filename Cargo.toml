@@ -28,4 +28,4 @@ whirlpool = "0.10"
 xxhash-rust = { version = "0.8", features = ["xxh3"] }
 
 [package.metadata.utopia]
-category = "support"
+category = "platform"
