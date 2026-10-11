@@ -11,6 +11,7 @@ bytes = "1"
 # crypt(), password_*() and hash(): Argon2, Blowfish (EksBlowfish), MD5, SHA-1, SHA-2 and SHA-3 (RustCrypto).
 argon2 = { version = "0.5", features = ["std"] }
 blowfish = { version = "0.9", features = ["bcrypt"] }
+foldhash = "0.2"
 getrandom = "0.3"
 gost94 = "0.10"
 indexmap = "2"
