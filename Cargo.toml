@@ -14,6 +14,7 @@ blowfish = { version = "0.9", features = ["bcrypt"] }
 foldhash = "0.2"
 getrandom = "0.3"
 gost94 = "0.10"
+hashbrown = { version = "0.17", default-features = false }
 indexmap = "2"
 md-5 = "0.10"
 md2 = "0.10"
@@ -21,6 +22,8 @@ icu_normalizer = { version = "2.3", default-features = false, features = ["compi
 icu_properties = { version = "2.3", default-features = false, features = ["compiled_data"] }
 ripemd = "0.1"
 rustix = { version = "1", default-features = false, features = ["std", "fs", "system"] }
+# Shortest round-trip float digits (serialize_precision = -1).
+ryu = "1"
 serde_json = { version = "1", features = ["raw_value", "preserve_order", "float_roundtrip"] }
 sha1 = "0.10"
 sha2 = "0.10"
